@@ -1,6 +1,6 @@
 # hide_dchp
 
-This repository contains a proof-of-concept implementation of a covert channel in DHCP. This software was developed a few years ago and is based on the Internet Systems Consortium (ISC) DHCP open software implementation version 4.1.1-P1. 
+This repository contains a proof-of-concept implementation of a covert channel in DHCP. This software was developed a few years ago and is based on the Internet Systems Consortium (ISC) DHCP open software implementation version 4.1.1-P1. Changes to the original code can be easily found by searching for the string "CCC".
 
 The covert channel exploits the sname and file fields in the DHCP protocol header to convey information from a client to a server. Two more channels based on the xid and options fields, respectively, were developed but they are not provided here. More information about these channels can be found in the following paper:
 
@@ -66,6 +66,6 @@ Uninstalling can be done with "sudo make uninstall" from the same folder.
 
 6)	Run a DHCP client in machine B
 
-    a.	Run the client with the –cc option to indicate which file to covertly send. More information about the client’s options can be read from the manual pages ($ man dhclient).
+   a.	Run the client with the –cc option to indicate which file to covertly send. More information about the client’s options can be read from the manual pages ($ man dhclient).
 
       # dhclient –d –cc sent_file
