@@ -11,7 +11,7 @@ If you are interested in the other 2 versions drop a line to the corresponding a
 
 ----------------------------------------------------------------------------------------------
 
-Installation on a Debian Operating System:
+Configuration and running (tested on Debian):
 
 0)	Install development packages to compile C code (if not done yet)
 
